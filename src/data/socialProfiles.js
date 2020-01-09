@@ -2,6 +2,7 @@ import emailIcon from '../assets/email_icon.png';
 import githubIcon from '../assets/github_icon.png';
 import linkedinIcon from '../assets/linkedin_icon.png';
 import twitterIcon from '../assets/twitter_icon.png';
+import facebookIcon from '../assets/facebook_icon.png';
 
 const SOCIAL_PROFILES = [
     {
@@ -19,10 +20,15 @@ const SOCIAL_PROFILES = [
         link: 'https://www.linkedin.com/in/dongmyoung-kim',
         image: linkedinIcon
     },
+    // {
+    //     id: 4,
+    //     link: 'https://twitter.com/Dong23215177',
+    //     image: twitterIcon
+    // },
     {
         id: 4,
-        link: 'https://twitter.com/Dong23215177',
-        image: twitterIcon
+        link: 'https://www.facebook.com/profile.php?id=100015220781935',
+        image: facebookIcon
     }
 ];
 

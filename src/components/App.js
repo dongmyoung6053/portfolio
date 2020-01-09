@@ -14,13 +14,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <img src={profile} alt="profile" className='profile' />
         <h1>Hello!</h1>
-        <p>My name is Dongmyoung.</p>
+        <h4>My name is Dongmyoung.</h4>
         <Title />
-        <p>I'm always looking forward to working on meaningful projects.</p>
         {this.state.displayBio ? (
           <div>
+            <p>I'm always looking forward to working on meaningful projects.</p>
             <p>I live in Halifax.</p>
             <p>
               My favorite language is JavaScript, and I think React is awesome.

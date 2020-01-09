@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import playButton from '../assets/play-button.png';
 
 class Tracks extends Component {
   state = { playing: false, audio: null, playingPreviewUrl: null };
@@ -33,7 +34,7 @@ class Tracks extends Component {
       return <span>| |</span>;
     }
 
-    return <span>&#9654;</span>;
+    return <span>></span>;
   };
 
   render() {

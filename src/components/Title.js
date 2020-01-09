@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const TITLES = [
   'a web developer',
-  'a full stack developer',
+  'a full stack engineer',
   'an enthusiastic learner',
   'an adventure seeker'
 ];
@@ -37,9 +37,9 @@ class Title extends Component {
     const title = TITLES[titleIndex];
 
     return (
-      <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>
+      <h4 className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>
         I am {title}
-      </p>
+      </h4>
     );
   }
 }

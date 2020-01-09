@@ -35703,50 +35703,80 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"assets/project1.png":[function(require,module,exports) {
-module.exports = "/project1.0e13da1c.png";
-},{}],"assets/project2.png":[function(require,module,exports) {
-module.exports = "/project2.d48872d8.png";
-},{}],"assets/project3.png":[function(require,module,exports) {
-module.exports = "/project3.592b562e.png";
-},{}],"data/projects.js":[function(require,module,exports) {
+},{"react-router":"../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
-var _project = _interopRequireDefault(require("../assets/project1.png"));
-
-var _project2 = _interopRequireDefault(require("../assets/project2.png"));
-
-var _project3 = _interopRequireDefault(require("../assets/project3.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 const PROJECTS = [{
   id: 1,
   title: 'Beach Resort - React Application',
   description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://github.com/dongmyoung6053/react-beach-resort-recording',
+  link: 'https://react-beach-resort-dongmyoung.netlify.com/',
+  git_link: 'https://github.com/dongmyoung6053/react-beach-resort-recording',
   image: 'https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1044&q=80'
 }, {
   id: 2,
   title: 'Video Search - React Application',
   description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://github.com/dongmyoung6053/video-search',
+  link: 'https://videoplayyoutube.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/video-search',
   image: 'https://images.unsplash.com/photo-1548328928-34db1c5fcc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
 }, {
   id: 3,
   title: 'Image Search - React Application',
   description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://github.com/dongmyoung6053/image-search',
+  link: 'https://searchimagesfromaxios.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/image-search',
   image: 'https://images.unsplash.com/photo-1466378743612-9da217f53e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 4,
+  title: 'Manchester City - React Application',
+  description: 'A React App that I built, involving JS and core web dev concepts!',
+  link: 'https://m-city-d3fbf.firebaseapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/manchester_city',
+  image: 'https://images.unsplash.com/photo-1555862124-94036092ab14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80'
+}, {
+  id: 5,
+  title: 'The Venue - React Application',
+  description: 'A React App that I built, involving JS and core web dev concepts!',
+  link: 'http://thin-airport.surge.sh/',
+  git_link: 'https://github.com/dongmyoung6053/theVenue',
+  image: 'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 6,
+  title: 'TVMaze - React Application',
+  description: 'A React App that I built, involving JS and core web dev concepts!',
+  link: 'https://tvmaze-1ed80.firebaseapp.com',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1565335020653-1d1c4fc20bbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1034&q=80'
+}, {
+  id: 7,
+  title: 'Emaily - React Application',
+  description: 'Survey Email Sender that can login with Google Authentication',
+  link: 'https://aqueous-mesa-64261.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 8,
+  title: 'NSCC Course - ASP.NET',
+  description: 'NSCC Course Map Website built by using ASP.NET.',
+  link: 'https://w0411191.azurewebsites.net/Identity/Account/Login?ReturnUrl=%2FCourses',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1461039088886-b5c863279a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 9,
+  title: 'Weather PWA - ASP.NET',
+  description: 'Weather Application built by using Progressive Web App.',
+  link: 'https://weather-7129f.firebaseapp.com/',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1523772721666-22ad3c3b6f90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/project1.png":"assets/project1.png","../assets/project2.png":"assets/project2.png","../assets/project3.png":"assets/project3.png"}],"components/Projects.js":[function(require,module,exports) {
+},{}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35765,7 +35795,8 @@ const Project = props => {
     title,
     image,
     description,
-    link
+    link,
+    git_link
   } = props.project;
   return _react.default.createElement("div", {
     style: {
@@ -35773,15 +35804,18 @@ const Project = props => {
       width: 300,
       margin: 10
     }
-  }, _react.default.createElement("h3", null, title), _react.default.createElement("img", {
+  }, _react.default.createElement("h3", null, title), _react.default.createElement("a", {
+    href: link,
+    target: "_blank"
+  }, _react.default.createElement("img", {
     src: image,
     alt: description,
     style: {
       width: 200,
       height: 120
     }
-  }), _react.default.createElement("p", null, description), _react.default.createElement("a", {
-    href: link,
+  })), _react.default.createElement("p", null, description), _react.default.createElement("a", {
+    href: git_link,
     target: "_black"
   }, "https://GithubLink"));
 };
@@ -35801,6 +35835,8 @@ module.exports = "/github_icon.2b0f71f9.png";
 module.exports = "/linkedin_icon.32d4c8f5.png";
 },{}],"assets/twitter_icon.png":[function(require,module,exports) {
 module.exports = "/twitter_icon.38592594.png";
+},{}],"assets/facebook_icon.png":[function(require,module,exports) {
+module.exports = "/facebook_icon.f1a269ff.png";
 },{}],"data/socialProfiles.js":[function(require,module,exports) {
 "use strict";
 
@@ -35817,6 +35853,8 @@ var _linkedin_icon = _interopRequireDefault(require("../assets/linkedin_icon.png
 
 var _twitter_icon = _interopRequireDefault(require("../assets/twitter_icon.png"));
 
+var _facebook_icon = _interopRequireDefault(require("../assets/facebook_icon.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const SOCIAL_PROFILES = [{
@@ -35831,14 +35869,19 @@ const SOCIAL_PROFILES = [{
   id: 3,
   link: 'https://www.linkedin.com/in/dongmyoung-kim',
   image: _linkedin_icon.default
-}, {
+}, // {
+//     id: 4,
+//     link: 'https://twitter.com/Dong23215177',
+//     image: twitterIcon
+// },
+{
   id: 4,
-  link: 'https://twitter.com/Dong23215177',
-  image: _twitter_icon.default
+  link: 'https://www.facebook.com/profile.php?id=100015220781935',
+  image: _facebook_icon.default
 }];
 var _default = SOCIAL_PROFILES;
 exports.default = _default;
-},{"../assets/email_icon.png":"assets/email_icon.png","../assets/github_icon.png":"assets/github_icon.png","../assets/linkedin_icon.png":"assets/linkedin_icon.png","../assets/twitter_icon.png":"assets/twitter_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
+},{"../assets/email_icon.png":"assets/email_icon.png","../assets/github_icon.png":"assets/github_icon.png","../assets/linkedin_icon.png":"assets/linkedin_icon.png","../assets/twitter_icon.png":"assets/twitter_icon.png","../assets/facebook_icon.png":"assets/facebook_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35858,7 +35901,8 @@ const SocialProfile = props => {
     image
   } = props.socialProfile;
   return _react.default.createElement("span", null, _react.default.createElement("a", {
-    href: link
+    href: link,
+    target: "_blank"
   }, _react.default.createElement("img", {
     src: image,
     alt: image,
@@ -35895,7 +35939,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-const TITLES = ['a web developer', 'a full stack developer', 'an enthusiastic learner', 'an adventure seeker'];
+const TITLES = ['a web developer', 'a full stack engineer', 'an enthusiastic learner', 'an adventure seeker'];
 
 class Title extends _react.Component {
   constructor(...args) {
@@ -35938,7 +35982,7 @@ class Title extends _react.Component {
       titleIndex
     } = this.state;
     const title = TITLES[titleIndex];
-    return _react.default.createElement("p", {
+    return _react.default.createElement("h4", {
       className: fadeIn ? 'title-fade-in' : 'title-fade-out'
     }, "I am ", title);
   }
@@ -35991,11 +36035,7 @@ class App extends _react.Component {
   }
 
   render() {
-    return _react.default.createElement("div", null, _react.default.createElement("img", {
-      src: _profile.default,
-      alt: "profile",
-      className: "profile"
-    }), _react.default.createElement("h1", null, "Hello!"), _react.default.createElement("p", null, "My name is Dongmyoung."), _react.default.createElement(_Title.default, null), _react.default.createElement("p", null, "I'm always looking forward to working on meaningful projects."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I live in Halifax."), _react.default.createElement("p", null, "My favorite language is JavaScript, and I think React is awesome."), _react.default.createElement("button", {
+    return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Hello!"), _react.default.createElement("h4", null, "My name is Dongmyoung."), _react.default.createElement(_Title.default, null), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm always looking forward to working on meaningful projects."), _react.default.createElement("p", null, "I live in Halifax."), _react.default.createElement("p", null, "My favorite language is JavaScript, and I think React is awesome."), _react.default.createElement("button", {
       onClick: this.toggleDisplayBio
     }, "Show less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
       onClick: this.toggleDisplayBio
@@ -36161,7 +36201,9 @@ const Artist = ({
 
 var _default = Artist;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"projects/music-master/components/Tracks.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"projects/music-master/assets/play-button.png":[function(require,module,exports) {
+module.exports = "/play-button.af01da0c.png";
+},{}],"projects/music-master/components/Tracks.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36170,6 +36212,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
+
+var _playButton = _interopRequireDefault(require("../assets/play-button.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -36223,7 +36269,7 @@ class Tracks extends _react.Component {
         return _react.default.createElement("span", null, "| |");
       }
 
-      return _react.default.createElement("span", null, "\u25B6");
+      return _react.default.createElement("span", null, ">");
     });
   }
 
@@ -36258,7 +36304,7 @@ class Tracks extends _react.Component {
 
 var _default = Tracks;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"projects/music-master/components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/play-button.png":"projects/music-master/assets/play-button.png"}],"projects/music-master/components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36522,7 +36568,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51500" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56813" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
