@@ -1,5 +1,5 @@
 import React from 'react';
-import PROJECTS, { projectTitle } from '../data/projects';
+import HIGHLIGHTEDPROJECTS, { projectTitle } from '../data/highlightedProjects';
 
 const Project = props => {
   const { title, image, description, link, git_link } = props.project;
@@ -22,15 +22,15 @@ const Project = props => {
   );
 };
 
-const Projects = () => (
+const HighlightedProjects = () => (
   <div>
     <h2>{ projectTitle }</h2>
     <div>
-      {PROJECTS.map(PROJECT => (
+      {HIGHLIGHTEDPROJECTS.map(PROJECT => (
         <Project key={PROJECT.id} project={PROJECT} />
       ))}
     </div>
   </div>
 );
 
-export default Projects;
+export default HighlightedProjects;

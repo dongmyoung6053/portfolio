@@ -33,7 +33,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h2>Music Master</h2>
+        <h2>Music for Relax</h2>
+        <p style={{color: 'red'}}>Sorry. Music is just previews for 30 seconds.</p>
+        <p style={{color: 'blue'}}>Find your favorite singer and <em>play it!</em></p>
         <Search searchArtist={this.searchArtist} />
         <Artist artist={this.state.artist} />
         <Tracks tracks={this.state.tracks} />

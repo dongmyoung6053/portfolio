@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Projects from './Projects';
+import HighlightedProjects from './HighlightedProjects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
-import profile from '../assets/profile.jpg';
 
 class App extends Component {
   state = { displayBio: false };
@@ -20,7 +19,6 @@ class App extends Component {
         {this.state.displayBio ? (
           <div>
             <p>I'm always looking forward to working on meaningful projects.</p>
-            <p>I live in Halifax.</p>
             <p>
               My favorite language is JavaScript, and I think React is awesome.
             </p>
@@ -33,7 +31,7 @@ class App extends Component {
         )
         }
         <hr />
-        <Projects />
+        <HighlightedProjects />
         <hr />
         <SocialProfiles />
       </div>

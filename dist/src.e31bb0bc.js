@@ -35703,80 +35703,61 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"data/projects.js":[function(require,module,exports) {
+},{"react-router":"../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"data/highlightedProjects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
-const PROJECTS = [{
+exports.default = exports.projectTitle = void 0;
+const projectTitle = 'Highlighted Projects';
+exports.projectTitle = projectTitle;
+const HIGHLIGHTEDPROJECTS = [{
   id: 1,
   title: 'Beach Resort - React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
+  description: 'A React App that makes users enable to check available rooms to reserve.',
   link: 'https://react-beach-resort-dongmyoung.netlify.com/',
   git_link: 'https://github.com/dongmyoung6053/react-beach-resort-recording',
   image: 'https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1044&q=80'
 }, {
   id: 2,
-  title: 'Video Search - React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://videoplayyoutube.herokuapp.com/',
-  git_link: 'https://github.com/dongmyoung6053/video-search',
-  image: 'https://images.unsplash.com/photo-1548328928-34db1c5fcc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
-}, {
-  id: 3,
-  title: 'Image Search - React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://searchimagesfromaxios.herokuapp.com/',
-  git_link: 'https://github.com/dongmyoung6053/image-search',
-  image: 'https://images.unsplash.com/photo-1466378743612-9da217f53e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
-}, {
-  id: 4,
   title: 'Manchester City - React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
+  description: 'A React App that makes users to find players and matches information.',
   link: 'https://m-city-d3fbf.firebaseapp.com/',
   git_link: 'https://github.com/dongmyoung6053/manchester_city',
   image: 'https://images.unsplash.com/photo-1555862124-94036092ab14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80'
 }, {
-  id: 5,
+  id: 3,
   title: 'The Venue - React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
+  description: 'A React App that makes users enable to find local musical events.',
   link: 'http://thin-airport.surge.sh/',
   git_link: 'https://github.com/dongmyoung6053/theVenue',
   image: 'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
 }, {
+  id: 4,
+  title: 'Video Search - React Application',
+  description: 'A React App that makes users to find video contents. (YouTube Data API)',
+  link: 'https://videoplayyoutube.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/video-search',
+  image: 'https://images.unsplash.com/photo-1548328928-34db1c5fcc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 5,
+  title: 'Image Search - React Application',
+  description: 'A React App that makes users enable to find images (Unsplash Image API)',
+  link: 'https://searchimagesfromaxios.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/image-search',
+  image: 'https://images.unsplash.com/photo-1466378743612-9da217f53e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
   id: 6,
-  title: 'TVMaze - React Application',
-  description: 'A React App that I built, involving JS and core web dev concepts!',
-  link: 'https://tvmaze-1ed80.firebaseapp.com',
-  git_link: 'https://github.com/dongmyoung6053',
-  image: 'https://images.unsplash.com/photo-1565335020653-1d1c4fc20bbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1034&q=80'
-}, {
-  id: 7,
-  title: 'Emaily - React Application',
-  description: 'Survey Email Sender that can login with Google Authentication',
-  link: 'https://aqueous-mesa-64261.herokuapp.com/',
-  git_link: 'https://github.com/dongmyoung6053',
-  image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
-}, {
-  id: 8,
   title: 'NSCC Course - ASP.NET',
-  description: 'NSCC Course Map Website built by using ASP.NET.',
+  description: 'NSCC Course Map that shows available courses in NSCC.',
   link: 'https://w0411191.azurewebsites.net/Identity/Account/Login?ReturnUrl=%2FCourses',
   git_link: 'https://github.com/dongmyoung6053',
   image: 'https://images.unsplash.com/photo-1461039088886-b5c863279a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
-}, {
-  id: 9,
-  title: 'Weather PWA - ASP.NET',
-  description: 'Weather Application built by using Progressive Web App.',
-  link: 'https://weather-7129f.firebaseapp.com/',
-  git_link: 'https://github.com/dongmyoung6053',
-  image: 'https://images.unsplash.com/photo-1523772721666-22ad3c3b6f90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
 }];
-var _default = PROJECTS;
+var _default = HIGHLIGHTEDPROJECTS;
 exports.default = _default;
-},{}],"components/Projects.js":[function(require,module,exports) {
+},{}],"components/HighlightedProjects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35786,7 +35767,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _projects = _interopRequireDefault(require("../data/projects"));
+var _highlightedProjects = _interopRequireWildcard(require("../data/highlightedProjects"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35820,21 +35805,19 @@ const Project = props => {
   }, "https://GithubLink"));
 };
 
-const Projects = () => _react.default.createElement("div", null, _react.default.createElement("h2", null, "Highlighted Projects"), _react.default.createElement("div", null, _projects.default.map(PROJECT => _react.default.createElement(Project, {
+const HighlightedProjects = () => _react.default.createElement("div", null, _react.default.createElement("h2", null, _highlightedProjects.projectTitle), _react.default.createElement("div", null, _highlightedProjects.default.map(PROJECT => _react.default.createElement(Project, {
   key: PROJECT.id,
   project: PROJECT
 }))));
 
-var _default = Projects;
+var _default = HighlightedProjects;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../data/projects":"data/projects.js"}],"assets/email_icon.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../data/highlightedProjects":"data/highlightedProjects.js"}],"assets/email_icon.png":[function(require,module,exports) {
 module.exports = "/email_icon.d6c23642.png";
 },{}],"assets/github_icon.png":[function(require,module,exports) {
 module.exports = "/github_icon.2b0f71f9.png";
 },{}],"assets/linkedin_icon.png":[function(require,module,exports) {
 module.exports = "/linkedin_icon.32d4c8f5.png";
-},{}],"assets/twitter_icon.png":[function(require,module,exports) {
-module.exports = "/twitter_icon.38592594.png";
 },{}],"assets/facebook_icon.png":[function(require,module,exports) {
 module.exports = "/facebook_icon.f1a269ff.png";
 },{}],"data/socialProfiles.js":[function(require,module,exports) {
@@ -35850,8 +35833,6 @@ var _email_icon = _interopRequireDefault(require("../assets/email_icon.png"));
 var _github_icon = _interopRequireDefault(require("../assets/github_icon.png"));
 
 var _linkedin_icon = _interopRequireDefault(require("../assets/linkedin_icon.png"));
-
-var _twitter_icon = _interopRequireDefault(require("../assets/twitter_icon.png"));
 
 var _facebook_icon = _interopRequireDefault(require("../assets/facebook_icon.png"));
 
@@ -35881,7 +35862,7 @@ const SOCIAL_PROFILES = [{
 }];
 var _default = SOCIAL_PROFILES;
 exports.default = _default;
-},{"../assets/email_icon.png":"assets/email_icon.png","../assets/github_icon.png":"assets/github_icon.png","../assets/linkedin_icon.png":"assets/linkedin_icon.png","../assets/twitter_icon.png":"assets/twitter_icon.png","../assets/facebook_icon.png":"assets/facebook_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
+},{"../assets/email_icon.png":"assets/email_icon.png","../assets/github_icon.png":"assets/github_icon.png","../assets/linkedin_icon.png":"assets/linkedin_icon.png","../assets/facebook_icon.png":"assets/facebook_icon.png"}],"components/SocialProfiles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35939,7 +35920,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-const TITLES = ['a web developer', 'a full stack engineer', 'an enthusiastic learner', 'an adventure seeker'];
+const TITLES = ['a web developer', 'a full stack programmer', 'an enthusiastic learner', 'an adventure seeker'];
 
 class Title extends _react.Component {
   constructor(...args) {
@@ -35991,9 +35972,7 @@ class Title extends _react.Component {
 
 var _default = Title;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"assets/profile.jpg":[function(require,module,exports) {
-module.exports = "/profile.0a62ebc3.jpg";
-},{}],"components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36003,13 +35982,11 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _Projects = _interopRequireDefault(require("./Projects"));
+var _HighlightedProjects = _interopRequireDefault(require("./HighlightedProjects"));
 
 var _SocialProfiles = _interopRequireDefault(require("./SocialProfiles"));
 
 var _Title = _interopRequireDefault(require("./Title"));
-
-var _profile = _interopRequireDefault(require("../assets/profile.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36035,18 +36012,18 @@ class App extends _react.Component {
   }
 
   render() {
-    return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Hello!"), _react.default.createElement("h4", null, "My name is Dongmyoung."), _react.default.createElement(_Title.default, null), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm always looking forward to working on meaningful projects."), _react.default.createElement("p", null, "I live in Halifax."), _react.default.createElement("p", null, "My favorite language is JavaScript, and I think React is awesome."), _react.default.createElement("button", {
+    return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Hello!"), _react.default.createElement("h4", null, "My name is Dongmyoung."), _react.default.createElement(_Title.default, null), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "I'm always looking forward to working on meaningful projects."), _react.default.createElement("p", null, "My favorite language is JavaScript, and I think React is awesome."), _react.default.createElement("button", {
       onClick: this.toggleDisplayBio
     }, "Show less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
       onClick: this.toggleDisplayBio
-    }, "Read more")), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
+    }, "Read more")), _react.default.createElement("hr", null), _react.default.createElement(_HighlightedProjects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
   }
 
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Projects":"components/Projects.js","./SocialProfiles":"components/SocialProfiles.js","./Title":"components/Title.js","../assets/profile.jpg":"assets/profile.jpg"}],"components/Jokes.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./HighlightedProjects":"components/HighlightedProjects.js","./SocialProfiles":"components/SocialProfiles.js","./Title":"components/Title.js"}],"components/Jokes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36359,7 +36336,15 @@ class App extends _react.Component {
   }
 
   render() {
-    return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Music Master"), _react.default.createElement(_Search.default, {
+    return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Music for Relax"), _react.default.createElement("p", {
+      style: {
+        color: 'red'
+      }
+    }, "Sorry. Music is just previews for 30 seconds."), _react.default.createElement("p", {
+      style: {
+        color: 'blue'
+      }
+    }, "Find your favorite singer and ", _react.default.createElement("em", null, "play it!")), _react.default.createElement(_Search.default, {
       searchArtist: this.searchArtist
     }), _react.default.createElement(_Artist.default, {
       artist: this.state.artist
@@ -36460,7 +36445,137 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _default = _App.default;
 exports.default = _default;
-},{"./components/App":"projects/music-master/components/App.js","./index.css":"projects/music-master/index.css"}],"components/Header.js":[function(require,module,exports) {
+},{"./components/App":"projects/music-master/components/App.js","./index.css":"projects/music-master/index.css"}],"data/projects.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.projectTitle = void 0;
+const projectTitle = 'Projects';
+exports.projectTitle = projectTitle;
+const PROJECTS = [{
+  id: 1,
+  title: 'Beach Resort - React Application',
+  description: 'A React App that makes users enable to check available rooms to reserve.',
+  link: 'https://react-beach-resort-dongmyoung.netlify.com/',
+  git_link: 'https://github.com/dongmyoung6053/react-beach-resort-recording',
+  image: 'https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1044&q=80'
+}, {
+  id: 2,
+  title: 'Video Search - React Application',
+  description: 'A React App that makes users to find video contents. (YouTube Data API)',
+  link: 'https://videoplayyoutube.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/video-search',
+  image: 'https://images.unsplash.com/photo-1548328928-34db1c5fcc1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 3,
+  title: 'Image Search - React Application',
+  description: 'A React App that makes users enable to find images (Unsplash Image API)',
+  link: 'https://searchimagesfromaxios.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/image-search',
+  image: 'https://images.unsplash.com/photo-1466378743612-9da217f53e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 4,
+  title: 'Manchester City - React Application',
+  description: 'A React App that makes users to find players and matches information.',
+  link: 'https://m-city-d3fbf.firebaseapp.com/',
+  git_link: 'https://github.com/dongmyoung6053/manchester_city',
+  image: 'https://images.unsplash.com/photo-1555862124-94036092ab14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80'
+}, {
+  id: 5,
+  title: 'The Venue - React Application',
+  description: 'A React App that makes users enable to find local musical events.',
+  link: 'http://thin-airport.surge.sh/',
+  git_link: 'https://github.com/dongmyoung6053/theVenue',
+  image: 'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 6,
+  title: 'TVMaze - React Application',
+  description: 'A React App that makes users to find TV contents. (TVMaze API)',
+  link: 'https://tvmaze-1ed80.firebaseapp.com',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1565335020653-1d1c4fc20bbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1034&q=80'
+}, {
+  id: 7,
+  title: 'Emaily - React Application',
+  description: 'A React App that makes users to enable to send survey emails.',
+  link: 'https://aqueous-mesa-64261.herokuapp.com/',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 8,
+  title: 'NSCC Course - ASP.NET',
+  description: 'NSCC Course Map that shows available courses in NSCC.',
+  link: 'https://w0411191.azurewebsites.net/Identity/Account/Login?ReturnUrl=%2FCourses',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1461039088886-b5c863279a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}, {
+  id: 9,
+  title: 'Weather PWA - ASP.NET',
+  description: 'Realtime Weather Application that users can make a list of cities.',
+  link: 'https://weather-7129f.firebaseapp.com/',
+  git_link: 'https://github.com/dongmyoung6053',
+  image: 'https://images.unsplash.com/photo-1523772721666-22ad3c3b6f90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+}];
+var _default = PROJECTS;
+exports.default = _default;
+},{}],"components/Projects.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _projects = _interopRequireWildcard(require("../data/projects"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const Project = props => {
+  const {
+    title,
+    image,
+    description,
+    link,
+    git_link
+  } = props.project;
+  return _react.default.createElement("div", {
+    style: {
+      display: 'inline-block',
+      width: 300,
+      margin: 10
+    }
+  }, _react.default.createElement("h3", null, title), _react.default.createElement("a", {
+    href: link,
+    target: "_blank"
+  }, _react.default.createElement("img", {
+    src: image,
+    alt: description,
+    style: {
+      width: 200,
+      height: 120
+    }
+  })), _react.default.createElement("p", null, description), _react.default.createElement("a", {
+    href: git_link,
+    target: "_black"
+  }, "https://GithubLink"));
+};
+
+const Projects = () => _react.default.createElement("div", null, _react.default.createElement("h2", null, _projects.projectTitle), _react.default.createElement("div", null, _projects.default.map(PROJECT => _react.default.createElement(Project, {
+  key: PROJECT.id,
+  project: PROJECT
+}))));
+
+var _default = Projects;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../data/projects":"data/projects.js"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36493,8 +36608,12 @@ const Header = ({
   }, "Jokes")), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
-    to: "/music-master"
-  }, "Music Master"))), children);
+    to: "/musics"
+  }, "Musics")), _react.default.createElement("h3", {
+    style: style
+  }, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/projects"
+  }, "Projects"))), children);
 };
 
 var _default = Header;
@@ -36521,6 +36640,8 @@ var _Jokes = _interopRequireDefault(require("./components/Jokes"));
 
 var _musicMaster = _interopRequireDefault(require("./projects/music-master"));
 
+var _Projects = _interopRequireDefault(require("./components/Projects"));
+
 var _Header = _interopRequireDefault(require("./components/Header"));
 
 require("./index.css");
@@ -36537,10 +36658,13 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
   path: "/jokes",
   render: () => _react.default.createElement(_Header.default, null, _react.default.createElement(_Jokes.default, null))
 }), _react.default.createElement(_reactRouterDom.Route, {
-  path: "/music-master",
+  path: "/musics",
   render: () => _react.default.createElement(_Header.default, null, _react.default.createElement(_musicMaster.default, null))
+}), _react.default.createElement(_reactRouterDom.Route, {
+  path: "/projects",
+  render: () => _react.default.createElement(_Header.default, null, _react.default.createElement(_Projects.default, null))
 }))), document.querySelector('#root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","history":"../node_modules/history/esm/history.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./projects/music-master":"projects/music-master/index.js","./components/Header":"components/Header.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","history":"../node_modules/history/esm/history.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./projects/music-master":"projects/music-master/index.js","./components/Projects":"components/Projects.js","./components/Header":"components/Header.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -36568,7 +36692,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56813" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58625" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

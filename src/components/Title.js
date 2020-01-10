@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const TITLES = [
   'a web developer',
-  'a full stack engineer',
+  'a full stack programmer',
   'an enthusiastic learner',
   'an adventure seeker'
 ];
